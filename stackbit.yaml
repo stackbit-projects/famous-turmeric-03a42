@@ -361,9 +361,7 @@ models:
         label: Action Buttons
         items:
           type: model
-          models:
-            - action
-            - features_section
+          models: []
       - type: boolean
         name: has_background
         label: Enable section background
@@ -599,6 +597,12 @@ models:
         label: No follow
         default: false
         description: Add rel="nofollow" attribute to the link
+      - type: string
+        name: type
+        label: Object Type
+        description: The type of the object
+        const: action
+        hidden: true
   stackbit_page_meta:
     type: object
     label: Page meta data
