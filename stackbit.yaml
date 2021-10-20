@@ -323,6 +323,7 @@ models:
         description: The type of the object
         const: contact_section
         hidden: true
+    labelField: type
   content_section:
     type: object
     label: Content Section
@@ -348,13 +349,13 @@ models:
     labelField: title
     fields:
       - type: string
-        name: title
-        label: Title
-        description: The title of the section
-      - type: string
         name: subtitle
         label: Subtitle
         description: The subtitle of the section
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: list
         name: actions
         label: Action Buttons
