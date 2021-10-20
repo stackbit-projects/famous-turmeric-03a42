@@ -363,6 +363,7 @@ models:
           type: model
           models:
             - action
+            - features_section
       - type: boolean
         name: has_background
         label: Enable section background
